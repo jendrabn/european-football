@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" href="img/logo-512.png">
+    <link rel="stylesheet" href="vendor/materialize/css/materialize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="shortcut icon" href="img/logo-512.png">
+    <meta name="theme-color" content="#000000">
+</head>
+
+<body>
+
+    <nav-bar></nav-bar>
+
+    <main>
+        <div class="container">
+            <h1 class="main_title">Info Sepak Bola Eropa</h1>
+
+            <div class="row card_league_wrapper">
+                <card-league href="competition.html?league=2001" src="img/liga/liga-champions.png" name="Liga Champions"
+                    color="rgb(35,31,32)">
+                </card-league>
+
+                <card-league href="competition.html?league=2014" src="img/liga/liga-spanyol.png" name="Liga Spanyol"
+                    color="rgb(0,52,114)">
+                </card-league>
+
+                <card-league href="competition.html?league=2021" src="img/liga/liga-inggris.png" name="Liga Inggris"
+                    color="rgb(63,16,82)">
+                </card-league>
+
+                <card-league href="competition.html?league=2015" src="img/liga/liga-perancis.png" name="Liga Perancis"
+                    color="rgb(218,224,37)">
+                </card-league>
+
+                <card-league href="competition.html?league=2003" src="img/liga/liga-belanda.png" name="Liga Belanda"
+                    color="rgb(33,52,128)">
+                </card-league>
+
+                <card-league href="competition.html?league=2002" src="img/liga/liga-jerman.png" name="Liga Jerman"
+                    color="rgb(177,40,41)">
+                </card-league>
+            </div>
+
+        </div>
+    </main>
+
+    <foo-ter></foo-ter>
+
+    <script src="vendor/materialize/js/materialize.min.js"></script>
+    <script src="vendor/idb-2.1.3/idb.js"></script>
+    <script src="js/components/Navbar.js"></script>
+    <script src="js/components/CardLeague.js"></script>
+    <script src="js/components/Footer.js"></script>
+    <script src="js/db.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

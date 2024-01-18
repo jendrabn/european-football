@@ -1,0 +1,569 @@
+/* all */
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+*{
+    font-family: 'montserrat', sans-serif;
+}  
+
+.brand-logo{
+    font-family: 'Merriweather';
+    letter-spacing: .1rem;
+    font-weight: 700;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.card-image img{
+    width: 100%;
+}
+
+.tabs{
+    background-color: #f5f5f5;
+}
+
+.tabs .tab a:hover, .tabs .tab a.active {
+    color: #3D72A4;
+}
+
+.tabs .tab a {
+    color: #3D72A4;
+    font-weight: 500;
+}
+
+.tabs .indicator {
+    background-color: #3d72a4;
+}
+
+.tabs .tab a:focus, .tabs .tab a:focus.active{
+    background-color: rgba(61,114,164, .1);
+}
+
+.tabs{
+    margin-bottom: 30px;
+}
+/* end all */
+
+/* league Card */
+.card_league_wrapper{
+    margin-top: 50px;
+}
+
+.league_card{
+    padding: 20px 10px;
+    height: 243.5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-bottom: 7px solid;
+    border-radius: 10px;
+    transition: .2s ease;
+}
+
+.league_card .card-image img{
+    width: 100%;
+}
+
+.league_card .card-content{
+    text-align: center;
+    padding: 0;
+}
+
+.league_card .card-content p{
+    color: black;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.league_card:hover{
+    transform: scale(1.05);
+    border-top: 2px solid;
+    border-left: 2px solid;
+    border-right: 2px solid;
+}
+
+/* end league Card */
+
+/* footer */
+.page-footer{
+    margin-top: 150px;
+    padding: 25px 0;
+    text-align: center;
+}
+/* end footer */
+
+/* main title */
+.main_title {
+    font-family: 'Merriweather';
+    text-align: center;
+    margin-bottom: 70px;
+    margin-top: 95px;
+    color: #3D72A4;
+    font-size: 45px;
+    font-weight: 700;
+    letter-spacing: .2px;
+}
+/* end main title */
+
+
+
+/* team card */
+.team_card{
+    padding: 10px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.team_card .card-image{
+    width: 50px;
+    margin: 0;
+}
+
+.team_card .card-content{
+    padding: 15px 0 10px 0;
+    text-align: center;
+}
+
+.team_card .card-content p{
+    color: black;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.team_card .detail_btn{
+    display: flex;
+    opacity: 0;
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, .8);
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s ease;
+}
+
+.team_card .detail_btn:hover{
+    opacity: 1;
+}
+/* end team card */
+
+
+
+/* match component*/
+.match_wrapper{
+    margin-bottom: 20px;
+}
+
+.match_wrapper div:nth-child(1){
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    background-color: rgb(245,245,245);
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.match_wrapper div:nth-child(1) div:nth-child(2){
+    padding-right: 10px;
+}
+
+.match_wrapper .score{
+    text-align: right;
+    padding: 0 20px;
+}
+
+.match_wrapper table tr td{
+    padding: 10px;
+    font-size: 13px;
+}
+/* end match component */
+
+#_teamlogo{
+    margin-top: 50px;
+    width: 100%;
+}
+
+.team-table tbody tr td{
+    padding: 10px;
+    font-size: 13px;
+}
+
+.page_title{
+    text-align: center;
+    font-size: 40px;
+    color: #3D72A4;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Judul liga */
+#_leaguename {
+    margin-top: 95px;
+    margin-bottom: 70px;
+}
+
+#_leaguename h1{
+    /* default size 40px */
+    font-family: 'Merriweather';
+    margin-bottom: 10px;
+}
+
+#_leaguename p{
+    margin: 0;
+    text-align: center;
+    font-size: 18px;
+    color: #888;
+    font-weight: 500;
+}
+/* end Judul liga */
+
+
+
+
+#klasemen table tbody tr td img{
+    width: 35px; 
+    margin-right: 15px;
+}
+
+.team-table{
+    overflow: auto;
+}
+
+.team-details .row div:nth-child(1){
+    text-align: center;
+}
+
+.team-details img{
+    margin: auto;
+    width: 70%;
+}
+
+.team-details main .row{
+    display: flex;
+    align-items: center;
+}
+
+.team-details h4{
+    margin-bottom: 50px;
+    margin-top: 25px;
+    text-align: center;
+    font-weight: 600;
+}
+
+
+@media (max-width: 768px){
+    .main_title {
+        margin-bottom: 70px;
+        margin-top: 85px;
+        font-size: 38px;
+    }
+
+    #_leaguename {
+        margin-top: 80px;
+        margin-bottom: 60px;
+    }
+
+    #_leaguename h1{
+        font-size: 35px;
+    }
+
+    #_leaguename p{
+        font-size: 17px;
+    }
+}
+
+
+@media (max-width: 425px){
+
+    .brand-logo{
+        font-size: 1.8rem !important;
+    }
+
+    .main_title {
+        margin-bottom: 65px;
+        margin-top: 80px;
+        font-size: 33px;
+    }
+
+    #_leaguename {
+        margin-top: 70px;
+        margin-bottom: 50px;
+    }
+
+    #_leaguename h1{
+        font-size: 30px;
+        margin-bottom: 5px;
+    }
+
+    #_leaguename p{
+        font-size: 16px;
+    }
+
+
+    .tabs .tab a {
+        font-size: 11px !important;
+    }
+
+    .team-details{
+        padding: 25px 5px !important;
+    }
+
+    .team-details h4{
+
+        text-align: center;
+        font-weight: 600;
+        margin: 25px 0;
+    }
+    
+    .team-details .row div:nth-child(1){
+        text-align: center;
+        margin-bottom: 50px;
+        margin-top: 20px;
+    }
+
+
+    .team-table tbody tr td{
+        padding: 15px 10px;
+        font-size: 12px;
+    }
+
+    #_modal_alert .modal-content h4{
+        font-size: 25px;
+    }
+    #_modal_alert .modal-content p{
+        font-size: 14px;
+    }
+
+    #_modal_loading .modal-content div:nth-child(2){
+        font-size: 12px;
+    }
+
+}
+
+@media (max-width: 375px){
+
+    .brand-logo{
+        font-size: 1.5rem !important;
+    }
+    #_leaguename h1{
+        font-size: 27px;
+    }
+
+    #_leaguename p{
+        font-size: 15px;
+    }
+
+
+    .main_title {
+        margin-bottom: 60px;
+        margin-top: 70px;
+        font-size: 30px;
+    }
+
+        
+
+    .tabs .tab a {
+        font-size: 12px !important;
+    }
+
+ 
+
+    #klasemen table thead tr th, #klasemen table tbody tr td{
+        font-size: 12px !important;
+    }
+
+    #klasemen table tbody tr td img{
+        width: 20px; 
+        margin-right: 15px
+    }
+
+    .team_card{
+        height: 170px;
+    }
+
+    .team_card .card-image{
+        width: 35px;
+    }
+
+
+    .team-details{
+        padding: 25px 5px !important;
+    }
+
+    .team-details h4{
+
+        text-align: center;
+        font-weight: 600;
+        margin: 25px 0;
+    }
+    
+    .team-details .row div:nth-child(1){
+        text-align: center;
+        margin-bottom: 50px;
+        margin-top: 20px;
+    }
+
+    .team-details img{
+        margin: auto;
+        width: 60%;
+    }
+
+    .team-table tbody tr td{
+        padding: 10px 5px;
+        font-size: 11px;
+    }
+
+}
+
+
+.error_wrapper{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.error_wrapper h6{
+    font-size: 25px;
+    color: rgb(93, 93, 93);
+}
+
+.error_wrapper p a{
+    font-size: 15px;
+    margin: 0 5px;
+}
+
+.match-action-wrapper{
+    text-align: right;
+    margin-top: 10px;
+}
+
+.match-action-wrapper button{
+    background-color: white;
+    padding: 3px;
+    border: none;
+    cursor: pointer;
+}
+
+.match-action-wrapper button i{
+    font-size: 30px;
+    padding: 0px;
+    margin: 0px;
+    color: #3d72a4;
+}
+
+.delete_match i{
+    font-size: 30px;
+    padding: 0px;
+    margin: 0px;
+    color: #d32f2f !important;
+}
+
+.delete_team i {
+    font-size: 30px;
+    padding: 0px !important;
+    margin: 0px !important;
+    color: #d32f2f !important;
+}
+
+.delete_team {
+    cursor: pointer;
+    background-color: white;
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    z-index: 2;
+}
+
+.add_favorite_team i{
+    color: #e0e0e0 !important;
+}
+
+.favorite_team i{
+    color: #e91e63 !important;
+}
+
+.saved_match i {
+    color: #64dd17 !important;
+} 
+
+.loading_wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 70px;
+}
+
+.action_btn{
+    cursor: pointer;
+    background-color: white;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    z-index: 2;
+}
+
+.action_btn i{
+    font-size: 25px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.group_name{
+    background-color: #3d72a4;
+    padding: 10px 15px;
+
+}
+
+.group_name p{
+    margin: 0px;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* modal alert */
+#modal_alert .modal-loading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#modal_alert .modal-loading .preloader-wrapper{
+    margin-right: 20px;
+}
+
+
+
+@media (max-width: 600px){
+    
+    .league_card{
+        height: 400px;
+    }
+}
+
+@media (max-width: 475px){
+    
+    .league_card{
+        height: 300px;
+    }
+}
+
+
+@media (max-width: 375px){
+    
+    .league_card{
+        height: 240px;
+    }
+}
+
